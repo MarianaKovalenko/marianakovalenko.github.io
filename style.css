@@ -1,0 +1,131 @@
+:root {
+    --accent-color: #ff6d24;
+    --primary-color: #4e413b;
+    --secondary-color: #bba69f;
+    --background-color: #fffbf0;
+    --box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+    --width: 800px;
+  }
+  body {
+    font-family: "Times New Roman", Times, serif;
+    background: var(--background-color);
+    color: var(--primary-color);
+    margin: 100px auto;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 64px;
+    text-align: center;
+    margin: 10px;
+  }
+  h2 {
+    font-size: 48px;
+    text-align: center;
+    margin: 10px;
+  }
+  h3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
+  }
+  a {
+    text-align: center;
+    font-size: 16px;
+  }
+  button {
+    font-size: 16px;
+    margin: 10px 15px;
+    padding: 20px 10px;
+    border-radius: 5px;
+  }
+  p {
+    text-align: justify;
+  }
+  .about {
+    max-width: var(--width);
+  }
+  .about-me {
+    background: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--background-color);
+    font-size: 18px;
+    padding: 20px;
+    margin: 10px 15px;
+    text-align: justify;
+  }
+  .navbar-brand {
+    font-size: 28px;
+  }  
+  #contact {
+    color: var(--accent-color);
+  }
+  #foto {
+    background: rgba(187, 166, 159, 0.6);
+    box-shadow: var(--box-shadow);
+  }
+  #go-to-top {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border: none;
+    margin-bottom: 20px;
+    width: 120px;
+  }
+  #launch {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border: none;
+    width: 120px;
+    transition: all 200ms ease-in-out;
+  }
+  #launch:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+  }
+  #mail {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  #mail:hover {
+    color: var(--accent-color);
+    font-size: 28px;
+  }
+  #orange {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    border: none;
+    width: 120px;
+  }
+  #white {
+    background-color: white;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    width: 120px;
+  }
+  
+  @media(max-width:768px){
+    #launch{
+        width: 220px;
+        text-decoration: none;
+    }        
+  }
