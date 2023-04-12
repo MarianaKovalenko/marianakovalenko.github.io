@@ -88,6 +88,9 @@
     margin-bottom: 20px;
     width: 120px;
   }
+  i{
+    font-size: 40px;
+  }
   #launch {
     background-color: var(--secondary-color);
     color: var(--background-color);
