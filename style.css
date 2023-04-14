@@ -4,6 +4,8 @@
     --secondary-color: #bba69f;
     --background-color: #fffbf0;
     --box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+    --body-font-family: 'Poppins', sans-serif;
+    --header-font-family: 'Playfair Display', serif;
     --width: 800px;
   }
   body {
@@ -11,11 +13,13 @@
     background: var(--background-color);
     color: var(--primary-color);
     margin: 100px auto;
+    font-family: var(--body-font-family);
   }
   header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 160px 20px;
   }
   section {
     display: flex;
@@ -31,17 +35,20 @@
     flex-wrap: wrap;
   }
   h1 {
+    font-family: var(--header-font-family);
     font-size: 64px;
     text-align: center;
     margin: 10px;
   }
   h2 {
-    font-size: 48px;
+    font-size: 36px;
+    font-weight: 700;
     text-align: center;
     margin: 10px;
   }
   h3 {
     font-size: 24px;
+    font-weight: 400;
     text-align: center;
     margin: 10px;
   }
@@ -50,7 +57,8 @@
     font-size: 16px;
   }
   button {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
     margin: 10px 15px;
     padding: 20px 10px;
     border-radius: 5px;
@@ -121,13 +129,13 @@
     color: var(--background-color);
     box-shadow: var(--box-shadow);
     border: none;
-    width: 120px;
+    width: 140px;
   }
   #white {
     background-color: white;
     color: var(--accent-color);
     border: 1px solid var(--accent-color);
-    width: 120px;
+    width: 140px;
   }
   
   @media(max-width:768px){
