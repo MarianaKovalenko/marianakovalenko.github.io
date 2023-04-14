@@ -55,6 +55,10 @@
     padding: 20px 10px;
     border-radius: 5px;
   }
+  footer a{
+    text-decoration: none;
+    color: var(--primary-color)
+  }
   p {
     text-align: justify;
   }
