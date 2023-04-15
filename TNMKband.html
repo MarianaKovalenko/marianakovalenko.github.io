@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Pop-Star by Mariana Kovalenko</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Dela+Gothic+One&family=Erica+One&family=Fredericka+the+Great&family=Rammetto+One&family=Rubik+80s+Fade&family=Rubik+Dirt&family=Rubik+Distressed&family=Ruslan+Display&family=Rye&display=swap" rel="stylesheet">
+    <style>
+        body{
+            width: 1200px;
+            display: block;
+            margin: 10px auto;
+            background-color: var(--color-primary);
+            transition: var(--transition);
+            border:solid 2px black;
+        }
+        
+        header{
+            font-family: 'Rubik Distressed', cursive;
+            text-align: center;
+            padding: 15px;
+            color: var(--font-color);
+        }
+        a{
+            text-decoration: none;
+            color: var(--color-link);
+        }
+        
+        h1{
+            font-size: 100px;
+            padding: 0;
+            margin: 0 auto;
+        }
+        h2{
+            font-size: 70px;
+            padding: 0;
+            margin: 0 auto;
+        }
+        h3{
+            font-size: 60px;
+            padding: 0;
+            margin: 0 auto;
+        }
+        h4{
+            font-size: 50px;
+            padding: 0;
+            margin: 0 auto;
+        }
+        h5{
+            font-size:24px;
+            display: block;
+            padding:0;
+            margin: 0 auto;
+            text-align: center;
+            color: var(--font-color);
+        }
+        p{
+            text-align: justify;
+            padding: 0 20px;
+        }
+        button{
+            font-family: 'Rubik Distressed', cursive;
+            font-size: 36px;
+            padding: 5px;
+            display: block;
+            margin: 5px auto;
+            color: firebrick;
+            border: 3px solid firebrick;
+            border-radius: 25px;
+            transition: all 500ms ease-in-out;
+        }
+        button:hover{
+            cursor: pointer;
+            color: white;
+            border-color: white;
+            background-color: firebrick;
+        }
+        #fullscreen{
+            display: block;
+            margin: 40px auto 80px;
+            transition: all 700ms ease-in-out;
+            box-shadow:var(--color-third) 3px 3px 40px 20px;
+        }
+        
+        #fullscreen:hover{
+            transform: scale(1.6) rotateY(360deg) translate(0, -30%);
+        }
+        #foto{
+            margin-bottom: 0;
+        }
+        .gallery{
+            width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            background-color: #000000;
+            margin-top: 0;
+        }
+        .gallery img{
+            border: #000000 2px solid;
+            border-radius: 8px;
+            border: white solid 3px;
+            transition: all 200ms ease-in-out;
+            margin: 10px auto;
+        }
+        .gallery img:hover{
+            transform: scale(3);
+
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin:20px auto;
+        }
+        
+        .theme-light{
+            --color-primary:#e8e3f3;
+            --color-secondary:#897da3;
+            --color-third: none;
+            --color-link:#766796;
+            --color-accent:#658f7f;
+            --font-color:black;
+            --transition: 5s ease-out;
+        }
+        .theme-dark{
+            --color-primary:#000000;
+            --color-secondary:#635a75;
+            --color-third:white;
+            --color-link:#000000;
+            --color-accent:#692b2b;
+            --font-color:white;
+            --transition: 14s ease-out;
+
+        }        
+        .youtube iframe{
+            display: block;
+            margin-top: 0;
+            border-radius: 5px;
+
+        }
+        .youtube{
+            margin:20px auto;
+            transition: all 700ms ease-in-out;
+            box-shadow:var(--color-third) 3px 3px 40px 20px;
+            transition: all 200ms ease-in-out;
+            
+        }
+        
+        .youtube:hover{
+            transform: scale(1.6) rotateY(360deg) translate(0, -30%);
+
+        }
+        .socials{
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .socials img{
+            margin:20px;
+            box-shadow: #897da3 2px 2px 3px;
+            border-radius: 20%;
+            transition: all 200ms ease-in-out;
+        }
+        .socials img:hover{
+            transform: scale(1.5);
+        }
+        
+     
+        marquee{
+            width: 1200px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: #897da3 2px 2px 3px;;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="newspaper">
+        <header>
+            <h1>
+                <abbr title="The abbreviation comes from the Ukrainian version of the band's name:[tɐˈnɔk nɑ mɐjˈdɑn⁽ʲ⁾i ˈKɔnɡo]">TNMK
+                </abbr>
+            </h1>
+            <h2>Tanok Na Maidani Congo</h2>
+            <h3>Dance on Congo Square</h3>
+            <h4>Танок на Майдані Конго</h4>
+        </header>
+        <div class="text">
+            <p>
+                "Tanok na Maidani Congo" ("TNMK") is a Ukrainian band that performs music in the styles of rapcore, hip-hop, rock and funk. 
+                The first prototype of the band was created on June 14, 1989 in Kharkiv (Ukrahine) by two friends and current members of TNMK: Fozzi and Kotya. The band was originally called "Novi Doma"("New buildings" or "New houses").
+                The band started working as TNMK in 1996.On suggestion of the band's wind instruments performer Maksym Lytvynenko, the band changed its name to "Tanok na Maidani Congo" after the Congo Square in New Orleans, which is considered to be a place where jazz was born.
+            </p>
+            <p>
+                It seems that not many hip-hop groups collaborate with symphony orchestras. However, TNMK did it. In their creative output, they have the album <a href="http://tnmk.com/ru/music/album/11" target="_blank">"Sympho Hip-Hop"</a> created in cooperation with <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%96%D0%B6%D0%BD%D0%B8%D0%B9_%D0%BE%D1%80%D0%BA%D0%B5%D1%81%D1%82%D1%80_%22%D0%A1%D0%BB%D0%BE%D0%B1%D0%BE%D0%B6%D0%B0%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%22_(%D0%A5%D0%B0%D1%80%D0%BA%D1%96%D0%B2)" target="_blank">Youth Academic Symphony Orchestra "Slobozhansky"</a>. This is an amazing combination! And I would like you to feel this sound and fully enjoy it. For a greater sense of presence in the concert hall, I suggest you use headphones and press the "ON AIR" button.
+            </p>
+            <p>
+                I suggest to your attention to watch the concert performance of TNMK and the Orchestra "Slobozhansky" with a song called "Tam de ti ye"("There where you are"). The guys dedicated this composition to the memory of the protesters who died on Maidan Nezalezhnosti (Kyiv, Ukraine) during <a href="https://en.wikipedia.org/wiki/Revolution_of_Dignity" target="_blank">the Revolution of Dignity</a>, who were later called <a href="https:// en.wikipedia.org/wiki/Maidan_casualties" target="_blank">"Heavenly Company"</a>.
+            </p>
+        </div>
+        
+        <button id="switch" onclick="toggleTheme()">ON AIR</button>
+        
+        <br/>
+        <iframe id="fullscreen" width="560" height="315" src="https://www.youtube.com/embed/ulZ-r7W301M" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+        <br/>
+
+        <div class="text">
+            <p>The frontmen of the TNMK band are Oleg Mykhailyuta <a href="https://instagram.com/fahot?igshid=YmMyMTA2M2Y=
+                " target="_blank">(Fahot)</a> and Oleksandr Sydorenko <a href="https://instagram.com/metamorefozzey?igshid=YmMyMTA2M2Y=" target="_blank">(Fozzi)</a>. You can follow them on their own Instagram pages.You can see other band members here in the gallery.
+            </p>
+            <p>
+                <a href="https://en.wikipedia.org/wiki/TNMK" target="_blank">Learn more about TNMK band...</a> 
+            </p>
+
+        </div>
+        
+        <img id="foto" width="1200" src="
+        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/660/original/tnmk3.jpg?1678815284" alt="TMNK">
+        <div class="gallery">
+            <img width="150" height="100"src="
+            https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/670/original/tnmk5.jpg?1678823029" alt="TMNK band">
+            <img width="150" height="100" src="
+            https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/678/original/tmnksimfo1.jpg?1678823280" alt="TMNK band">
+            <img width="150" height="100"src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/677/original/tmnksimfo2.jpg?1678823254" alt="TMNK band">
+            <img width="150" height="100"src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/671/original/tnmksimfo.jpg?1678823080" alt="">
+            <img width="150" height="100"src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/676/original/tmnksimfo3.jpg?1678823228" alt="TMNK band">
+            <img width="150" height="100"src="
+            https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/674/original/tmnksimfo5.jpg?1678823184" alt="TMNK band">
+            
+            <img width="150" height="100"src="
+            https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/673/original/tnmk1.jpg?1678823161" alt="TMNK band">
+        </div>
+
+            <div class="container">
+                <div class="youtube">
+                    <h5>Pirates</h5>
+                    <iframe width="300" height="176" src="https://www.youtube.com/embed/odTntw2Gb88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="youtube">
+                    <h5>My weapon</h5>
+                    <iframe width="300" height="176" src="https://www.youtube.com/embed/CJ9cezW6OKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="youtube">
+                    <h5>Energodar (Ukrainian town)</h5>
+                    <iframe width="300" height="176" src="https://www.youtube.com/embed/Kv25wIzQISE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    
+                </div>
+                <div class="youtube">
+                    <h5>Fidel</h5>
+                    <iframe width="300" height="176" src="https://www.youtube.com/embed/LfK12xmGtVE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>            
+    
+                </div>
+                <div class="youtube">
+                    <h5>Audibly</h5>
+                    <iframe width="300" height="176" src="https://www.youtube.com/embed/sfYWJXTfBTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+                </div>
+                <div class="youtube">
+                    <h5>Sharp knives</h5>
+                    <iframe width="300" height="176" src="https://www.youtube.com/embed/Bhcivyi9W9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+                </div>
+                <div class="youtube">
+                    <h5>A broken heart</h5>
+                    <iframe width="300" height="176" src="https://www.youtube.com/embed/czRxX5hBe1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+                </div>
+                <div class="youtube">
+                    <h5>Make me hip hop</h5>
+                    <iframe width="300" height="176" src="https://www.youtube.com/embed/PeIyv4nSme4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+                </div>
+                <div class="youtube">
+                    <h5>In autumn</h5>
+                    <iframe width="300" height="176" src="https://www.youtube.com/embed/61zrPzcNMgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+                </div>         
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/TNMKband" target="_blank" class="icon"><img width="45px" height="45px"src="
+                    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/849/original/14498067661530099611-128.png?1678898261" alt="facebook"></a>
+                <a href="https://www.instagram.com/tnmkongo/" target="_blank" class="icon"><img width="45px" height="45px"src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/850/original/9608604721530099615-128.png?1678898271" alt="instagram"></a>
+                <a href="https://www.youtube.com/@tnmkmusic" target="_blank" class="icon"><img width="45px" height="45px" src="
+                    https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/844/original/3399900751530099628-128.png?1678898205" alt="youtube"></a>
+                <a href="https://twitter.com/TNMKongo" target="_blank" class="icon"><img width="45px" height="45px"src="
+                    
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/851/original/20925790981530102015-128.png?1678899175" alt="twitter"></a>
+                    <a href="http://www.tnmk.com/" target="_blank" class="icon"><img width="45px" height="45px"src="
+                        https://s3.amazonaws.com/shecodesio-production/uploads/files/000/071/846/original/409309171601537800-128.png?1678898234" alt="website"></a>    
+    
+            </div>
+            <footer>
+                <marquee behavior="scroll" direction="left">This page was created by <a href="https://github.com/MarianaKovalenko/" target="_blank">Mariana Kovalenko</a> specifically for SheCodes Challenges <a href="https://www.shecodes.io/contests/pop-star-landing-page" target="_blank">"Pop Star Landing Page Challenge"</a>.</marquee>
+            </footer>
+        
+    </div>
+    <script>
+        function setTheme (themeName) { 
+            localStorage.setItem ("theme", themeName); 
+            document.documentElement. className = themeName;
+        }
+        setTheme("theme-light");
+        function toggleTheme () { 
+            if ( localStorage.getItem ("theme") === "theme-light") { 
+                
+                setTheme ("theme-dark");
+              
+            } else { 
+                setTheme ("theme-light"); 
+            };
+         };         
+    </script>
+</body>
+</html>
