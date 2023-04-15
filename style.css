@@ -3,19 +3,18 @@
     --primary-color: #4e413b;
     --secondary-color: #bba69f;
     --background-color: #fffbf0;
-    --box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+    --box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     --body-font-family: 'Poppins', sans-serif;
     --header-font-family: 'Playfair Display', serif;
     --width: 800px;
   }
   body {
-    font-family: "Times New Roman", Times, serif;
-    background: var(--background-color);
     color: var(--primary-color);
-    margin: 100px auto;
+    margin: 0 auto;
     font-family: var(--body-font-family);
   }
   header {
+    background: var(--background-color);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -146,4 +145,9 @@
         width: 220px;
         text-decoration: none;
     }        
+  }
+  @media(min-width:900px){
+    h1{
+      font-size: 96px;
+    }
   }
