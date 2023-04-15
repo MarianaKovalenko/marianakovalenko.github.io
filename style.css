@@ -58,6 +58,12 @@
     text-align: center;
     margin: 10px;
   }
+  h4{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+  }
   a {
     text-align: center;
     font-size: 16px;
@@ -71,6 +77,8 @@
   }
   p {
     text-align: justify;
+    font-size: 16px;
+    line-height: 30px;
   }
   .about {
     max-width: var(--width);
@@ -133,13 +141,7 @@
     border: none;
     width: 140px;
   }
-  #white {
-    background-color: white;
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    width: 140px;
-  }
-  
+    
   @media(max-width:768px){
     #launch{
         width: 220px;
