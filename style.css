@@ -145,6 +145,9 @@
     color: var(--primary-color);
     border: none;
   }
+  #top{
+    padding: 240px, 20px;
+  }
     
   @media(max-width:768px){
     #launch{
