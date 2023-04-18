@@ -87,10 +87,6 @@
     background: var(--secondary-color);
     border-radius: 5px;
     color: var(--background-color);
-    font-size: 18px;
-    padding: 20px;
-    margin: 10px 15px;
-    text-align: justify;
   }
   .navbar-brand {
     font-size: 28px;
@@ -134,6 +130,9 @@
     color: var(--accent-color);
     font-size: 28px;
   }
+  #myphoto{
+    transform:skew(-10deg, 10deg);
+  }
   #orange {
     background-color: var(--accent-color);
     color: var(--background-color);
@@ -141,12 +140,20 @@
     border: none;
     width: 140px;
   }
+  #see-button{
+    background: var(--background-color);
+    color: var(--primary-color);
+    border: none;
+  }
     
   @media(max-width:768px){
     #launch{
         width: 220px;
         text-decoration: none;
-    }        
+    }   
+    #myphoto{
+      transform: none;
+    }     
   }
   @media(min-width:900px){
     h1{
