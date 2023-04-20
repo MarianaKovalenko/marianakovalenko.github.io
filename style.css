@@ -108,6 +108,9 @@
   .top-works{
     padding: 240px 20px;
   }
+  .work:hover{
+    transform:scale(1.5);
+  }
   #contact {
     color: var(--accent-color);
   }
