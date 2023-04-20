@@ -96,6 +96,9 @@
     border-radius: 5px;
     color: var(--background-color);
   }
+  .contacts h5{
+    text-align: start;
+  }
   .navbar-brand {
     font-size: 28px;
   }  
@@ -107,6 +110,9 @@
   }
   .top-works{
     padding: 240px 20px;
+  }
+  .top-contacts{
+    padding: 50px 20px;
   }
   .work:hover{
     transform:scale(1.5);
