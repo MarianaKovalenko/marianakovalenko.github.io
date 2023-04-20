@@ -186,7 +186,13 @@
     }   
     #myphoto{
       transform: none;
-    }     
+    }    
+    .top-about{
+      padding: 240px 20px;
+    }
+    .top-works{
+      padding: 200px 20px;
+    } 
   }
   @media(min-width:900px){
     h1{
