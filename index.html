@@ -24,34 +24,41 @@
     <meta name="description" content="Hello! I'm Mariana Kovalenko, a front-end developer from Ukraine, Kyiv. I made an attempt to change my professional and creative path and become a front-end developer in December 2022. Since then, I've joined to SheCodes community and their coding workshops. I collected the results of my learning and work in this portfolio.">
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark fixed-top"
-      style="background-color: var(--secondary-color);"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="/images/marianalogo3x.png" width="100"alt="logomariana">
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="about.html">About me</a>
-            <a class="nav-link" href="works.html">My works</a>
-            <a class="nav-link" href="contact.html">Contact me</a>
+    <nav class="fixed-top">
+      <div class="container justify-content-between">
+        <div class="row align-items-center">
+          <div class="col-4 my-2"><img src="/images/marianalogo3x.png" alt="mylogo" width="100"></div>
+          <div class="col-8 d-none d-md-block my-2 text-end">
+            <ul class="justify-content-end">
+              <li>
+                <a href="/" class="active">Home</a>
+              </li>
+              <li>
+                <a href="/about.html">About me</a>
+  
+              </li>
+              <li>
+                <a href="/works.html">My works</a>
+              </li>
+              <li>
+                <a href="/contact.html">Contact me</a>
+                </li>
+            </ul>
+          </div>
+
+          <div class="dropdown-end col-8 d-block d-md-none my-2 text-end">
+            <button class="btn dropdown-toggle text-end justify-content-end me-0 pe-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="/images/navbar.png" alt="navbarlogo" width="60">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item text-end active" href="/">Home</a></li>
+              <li><a class="dropdown-item text-end" href="/about.html">About me</a></li>
+              <li><a class="dropdown-item text-end" href="/works.html">My works</a></li>
+              <li><a class="dropdown-item text-end" href="/contact.html">Contact me</a></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </div>  
     </nav>
     <header class="mt-5 top-home">
       <div class="container">

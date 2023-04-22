@@ -24,34 +24,41 @@
     <meta name="description" content="I am very happy to show you my projects created using html, css, javascript, bootstrap. If you like my projects, contact me and we'll discuss your project.">
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark fixed-top"
-      style="background-color: var(--secondary-color);"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="/images/marianalogo3x.png" width="100" alt="logomariana">
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            <a class="nav-link active" href="#">About me</a>
-            <a class="nav-link" href="works.html">My works</a>
-            <a class="nav-link" href="contact.html">Contact me</a>
+    <nav class="fixed-top">
+      <div class="container justify-content-between">
+        <div class="row align-items-center">
+          <div class="col-4 my-2"><img src="/images/marianalogo3x.png" alt="mylogo" width="100"></div>
+          <div class="col-8 d-none d-md-block my-2 text-end">
+            <ul class="justify-content-end">
+              <li>
+                <a href="/index.html">Home</a>
+              </li>
+              <li>
+                <a href="/" class="active">About me</a>
+  
+              </li>
+              <li>
+                <a href="/works.html">My works</a>
+              </li>
+              <li>
+                <a href="/contact.html">Contact me</a>
+                </li>
+            </ul>
+          </div>
+
+          <div class="dropdown-end col-8 d-block d-md-none my-2 text-end">
+            <button class="btn dropdown-toggle text-end justify-content-end me-0 pe-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="/images/navbar.png" alt="navbarlogo" width="60">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item text-end" href="/index.html">Home</a></li>
+              <li><a class="dropdown-item text-end active" href="/">About me</a></li>
+              <li><a class="dropdown-item text-end" href="/works.html">My works</a></li>
+              <li><a class="dropdown-item text-end" href="/contact.html">Contact me</a></li>
+            </ul>
           </div>
         </div>
-      </div>
+      </div>  
     </nav>
     <header class="mt-5 top-about">
       <h1>About me</h1>

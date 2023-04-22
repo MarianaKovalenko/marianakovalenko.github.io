@@ -13,6 +13,43 @@
     margin: 0 auto;
     font-family: var(--body-font-family);
   }
+  /* style navigation */
+  nav{
+    background: var(--secondary-color);
+  }
+  nav ul{display: inline;
+  }
+  nav li{
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+  }
+  li a,
+  .dropdown-item
+  {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--background-color);
+  }
+  .active{
+    color: var(--accent-color);
+    font-weight: 500;
+  }
+  .dropdown-menu{
+    background: var(--secondary-color);
+  }
+  .dropdown-end .active{
+    background: var(--secondary-color);
+    color: var(--accent-color);
+    font-weight: 500;
+
+  }
+  .dropdown-toggle{
+    border: none;
+    text-decoration-skip: none;
+  }
+  /* end style navigation */
   header {
     background: var(--background-color);
     display: flex;
