@@ -49,6 +49,13 @@
     border: none;
     text-decoration-skip: none;
   }
+  .dropdown-toggle:focus{
+    outline: none;
+
+  }
+  .dropdown-toggle::after{
+    display: none;
+  }
   /* end style navigation */
   header {
     background: var(--background-color);
