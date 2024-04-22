@@ -242,10 +242,10 @@
     transition: all 200ms ease-in-out;
   }
   #see-button:hover{
-    border: 3px solid var(--accent-color);
     color: var(--accent-color);
+    transform: scale(1.1);
+
   }#see-button:focus{
-    border: 3px solid var(--background-color);
     color: var(--background-color);
     background: var(--accent-color);
   }
